@@ -59,9 +59,6 @@ const addToCart = (bookName, bookPrice, bookId) => {
   cart.push(addedBook);
 
   const cardList = document.getElementById("card-list");
-  const bookEl = document.createElement("div");
-
-  //bookEl.className = "d-flex justify-content-between border-bottom";
 
   //adds a line with the total price of the cart
   let sumPrice = cart.reduce((acc, book) => acc + parseFloat(book.price), 0);
